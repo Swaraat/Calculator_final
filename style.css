@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: auto;
+  background-color: rgba(174, 219, 224, 0.841);
+  
+}
+
+#calculator {
+  border: 2px #1e1a1a;
+  border-width: 2%;
+  padding: 5%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 5%;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.button1,
+.button2 {
+  border: 2px solid #b0b7c2;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: #dce2ea;
+}
+
+.button1,
+.button2 {
+  cursor: pointer;
+
+}
+
+.button1:active,
+.button2:active {
+  background-color: #884b4b;
+}
+
+#display {
+  width: 100%;
+  padding: 5px;
+
+  position: static;
+  font-size: 20px;
+  text-align: right;
+  border-radius: 15px;
+  outline: none;
+  background-color: #dce2ea;
+  margin: 0 auto;
+  margin-left: 22px;
+  border-color: #73569e;
+}
+
+.sp {
+  color: red;
+  /* Change the color to your preferred color */
+}
+
+
+/* Media query for screens with width between 400px and 800px */
+@media (min-width: 400px) and (max-width: 800px) {
+  body {
+    min-width: 400px;
+    max-width: 500px;
+  }
+}
